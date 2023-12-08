@@ -10,6 +10,7 @@ specifiers:
   gsap: 3.10.4
   html-webpack-plugin: 5.5.0
   pixi.js: 6.5.1
+  terser-webpack-plugin: ^5.3.9
   webpack: ^5.89.0
   webpack-cli: 4.10.0
   webpack-dev-server: 4.9.3
@@ -27,6 +28,7 @@ devDependencies:
   clean-webpack-plugin: 4.0.0_webpack@5.89.0
   file-loader: 6.2.0_webpack@5.89.0
   html-webpack-plugin: 5.5.0_webpack@5.89.0
+  terser-webpack-plugin: 5.3.9_webpack@5.89.0
   webpack: 5.89.0_webpack-cli@4.10.0
   webpack-cli: 4.10.0_ibnct6dssx3owa6k6grgumanbi
   webpack-dev-server: 4.9.3_xufw7vsm4hgw2efzchq5tzqpge
@@ -3093,17 +3095,7 @@ packages:
     resolution: {integrity: sha512-ZuXsqE07EcggTWQjXUj+Aot/OMcD0bMKGgF63f7UxYcu5/AJF53aIpK1YoP5xR9l6s/Hy2b+t1AM0bLNPRuhwA==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
-      '@swc/core': '*'
-      esbuild: '*'
-      uglify-js: '*'
       webpack: ^5.1.0
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      esbuild:
-        optional: true
-      uglify-js:
-        optional: true
     dependencies:
       '@jridgewell/trace-mapping': 0.3.20
       jest-worker: 27.5.1
@@ -3374,10 +3366,6 @@ packages:
       watchpack: 2.4.0
       webpack-cli: 4.10.0_ibnct6dssx3owa6k6grgumanbi
       webpack-sources: 3.2.3
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - uglify-js
     dev: true
 
   /websocket-driver/0.7.4:
